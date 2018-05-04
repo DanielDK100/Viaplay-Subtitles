@@ -11,7 +11,6 @@
         "watch:css": "yarn css -w"
     },
     "dependencies": {
-        "hoek": "^5.0.3",
         "jquery": "^3.3.1",
         "node-sass": "^4.9.0",
         "uglify-js": "^3.3.23"
