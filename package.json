@@ -1,6 +1,14 @@
 {
-  "name": "Viaplay-Subtitles",
-  "version": "1.0.0",
-  "license": "MIT",
-  "dependencies": {}
+    "name": "Viaplay-Subtitles",
+    "main": "index.js",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+        "start": "node index.js",
+        "css": "node-sass src/style.scss dest/style.css --output-style compressed",
+        "watch:css": "yarn css -w"
+    },
+    "dependencies": {
+        "node-sass": "^4.9.0"
+    }
 }
