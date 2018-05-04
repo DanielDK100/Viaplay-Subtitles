@@ -5,10 +5,13 @@
     "license": "MIT",
     "scripts": {
         "start": "node index.js",
-        "css": "node-sass src/style.scss dest/style.css --output-style compressed",
+        "css": "node-sass src/scss/style.scss dest/css/style.css --output-style compressed",
+        "js": "uglifyjs src/js/custom.js --compress --mangle --output dest/js/custom.min.js",
         "watch:css": "yarn css -w"
     },
     "dependencies": {
-        "node-sass": "^4.9.0"
+        "jquery": "^3.3.1",
+        "node-sass": "^4.9.0",
+        "uglify-js": "^3.3.23"
     }
 }
