@@ -9,9 +9,9 @@
         "128": "dest/img/icon128.png"
     },
     "content_scripts": [{
-        "matches": ["https://viaplay.dk/*"],
+        "matches": ["https://*/*"],
+        "include_globs": ["https://viaplay.*/*"],
         "css": ["dest/css/style.min.css"],
-        //"js": ["dest/js/jquery.min.js", "dest/js/custom.min.js"],
         "run_at": "document_end"
     }]
 }
