@@ -6,8 +6,8 @@
     "scripts": {
         "start": "node index.js",
         "css": "node-sass src/scss/style.scss dest/css/style.min.css --output-style compressed",
-        "js": "uglifyjs src/js/custom.js --compress --mangle --output dest/js/custom.min.js",
-        "copy": "copyfiles -u 3 node_modules/jquery/dist/jquery.min.js dest/js",
+        "js": "uglifyjs src/js/custom.js --compress --mangle --output dest/js/custom.min.js && uglifyjs src/js/background.js --compress --mangle --output dest/js/background.min.js",
+        "copy": "copyfiles -u 3 node_modules/jquery/dist/jquery.min.js dest/js && copyfiles -u 4 node_modules/bootstrap/dist/css/bootstrap.min.css dest/css && copyfiles -u 4 node_modules/bootstrap/dist/js/bootstrap.min.js dest/js",
         "watch:css": "yarn css -w"
     },
     "dependencies": {
