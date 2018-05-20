@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Viaplay Subtitles</title>
     <link rel="stylesheet" href="dest/css/bootstrap.min.css">
-    <link rel="stylesheet" href="dest/css/spectrum.min.css">
     <link rel="stylesheet" href="dest/css/style.min.css">
 </head>
 <body id="vs-body">
@@ -14,19 +13,21 @@
         </section>
         <section class="row clearfix">
             <div class="col">
-                <h4>Background color</h4>
-                <input type='text' id="background">
+                <div class="form-group">
+                    <button id="background" class="btn btn-primary form-control">Change background color</button>
+                </div>
             </div>
             <div class="col">
-                <h4>Text color</h4>
-                <input type='text' id="text">
+                <div class="form-group">
+                    <button id="text" class="btn btn-primary form-control">Change text color</button>
+                </div>
             </div>
         </section>
         <section class="row">
             <div class="col text-center">
                 <div class="card">
                     <div class="card-body example-subtitle-cue">
-                        <p>Life is like a box of chocolates. <br>You never know what you're gonna get.</p>
+                        <p>Life is like a box of chocolates.<br>You never know what you're gonna get.</p>
                     </div>
                 </div>
             </div>
@@ -35,9 +36,7 @@
             <hr class="col">
         </section>
     </div>
-    <script src="dest/js/jquery.min.js"></script>
-    <script src="dest/js/bootstrap.min.js"></script>
-    <script src="dest/js/spectrum.min.js"></script>
+    <script src="dest/js/vanilla-picker.min.js"></script>
     <script src="dest/js/custom.min.js"></script>
 </body>
 </html>

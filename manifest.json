@@ -2,9 +2,8 @@
     "manifest_version": 2,
     "name": "Viaplay Subtitles",
     "short_name": "VS",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Makes it possible to change the background and text color of Viaplay's media player to whatever color you'd want.",
-    "author": "Daniel Winther",
     "icons": {
         "128": "dest/img/icon128.png"
     },
@@ -13,13 +12,13 @@
     },
     "background": {
         "persistent": false,
-        "scripts": ["dest/js/jquery.min.js", "dest/js/background.min.js"]
+        "scripts": ["dest/js/background.min.js"]
     },
     "content_scripts": [{
         "matches": ["https://*/*"],
         "include_globs": ["https://viaplay.*/*"],
         "css": ["dest/css/style.min.css"],
-        "js": ["dest/js/jquery.min.js", "dest/js/spectrum.min.js", "dest/js/custom.min.js"],
+        "js": ["dest/js/vanilla-picker.min.js", "dest/js/custom.min.js"],
         "run_at": "document_end"
     }],
     "permissions": [
