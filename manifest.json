@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Viaplay Subtitles",
     "short_name": "VS",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "Makes it possible to change the background and text color of Viaplay's media player to whatever color you'd want.",
     "icons": {
         "128": "dest/img/icon128.png"
