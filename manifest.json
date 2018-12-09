@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Viaplay Subtitles",
     "short_name": "VS",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "description": "Makes it possible to change the background and text color of Viaplay's subtitles to whatever color of your liking.",
     "icons": {
         "128": "dest/img/icon128.png"
