@@ -16,12 +16,12 @@ chrome.storage.sync.get(['vs_background', 'vs_text'], function(storage) {
 
     setManifestData(manifest);
     setMovieQuote(doc.querySelector('.example-subtitle-cue p'), movieQuotes);
-    var subtitles = setPopupColors(doc.querySelector('.example-subtitle-cue p'));
+    var subtitles = setPopupColors(doc.querySelector('.example-subtitle-cue p'), storage);
 
     initializeColorPicker(doc.querySelector('#background'), storage.vs_background, 'vs_background');
     initializeColorPicker(doc.querySelector('#text'), storage.vs_text, 'vs_text');
 
-    startInterval(10);
+    startInterval('.subtitle-cue p', 10);
 
     function setManifestData(manifest) {
         if (doc.querySelector('#vs-container')) {
@@ -40,7 +40,7 @@ chrome.storage.sync.get(['vs_background', 'vs_text'], function(storage) {
             element.textContent = randomQuote;
         }
     }
-    function setPopupColors(element) {
+    function setPopupColors(element, storage) {
         if (element) {
             element.style.cssText = 'background: ' + storage.vs_background + ' !important; color: ' + storage.vs_text + ' !important;';
             return element;
@@ -63,9 +63,9 @@ chrome.storage.sync.get(['vs_background', 'vs_text'], function(storage) {
             }
         });
     }
-    function startInterval(milliseconds) {
+    function startInterval(element, milliseconds) {
         setInterval(function() {
-            viaplaySubtitles = doc.querySelector('.subtitle-cue p');
+            viaplaySubtitles = doc.querySelector(element);
             if (viaplaySubtitles) {
                 chrome.storage.sync.get(['vs_background', 'vs_text'], function(storage) {
                     viaplaySubtitles.style.cssText = 'background: ' + storage.vs_background + ' !important; color: ' + storage.vs_text + ' !important;';
