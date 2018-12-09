@@ -8,10 +8,10 @@
         "watch:css": "yarn css -w"
     },
     "dependencies": {
-        "bootstrap": "^4.1.*",
-        "copyfiles": "^2.0.*",
-        "node-sass": "^4.10.*",
-        "uglify-js": "^3.3.*",
-        "vanilla-picker": "^2.1.*"
+        "bootstrap": "^4.*.*",
+        "copyfiles": "^2.*.*",
+        "node-sass": "^4.*.*",
+        "uglify-js": "^3.*.*",
+        "vanilla-picker": "^2.*.*"
     }
 }

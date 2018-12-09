@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Viaplay Subtitles</title>
+    <title class="vs-title"></title>
     <link rel="stylesheet" href="dest/css/bootstrap.min.css">
     <link rel="stylesheet" href="dest/css/style.min.css">
 </head>
 <body>
     <div id="vs-container" class="container-fluid">
         <section class="row">
-            <h2 class="col">Viaplay Subtitles</h2>
+            <h2 class="col vs-title"></h2>
         </section>
         <section class="row clearfix">
             <div class="col">
@@ -23,7 +23,7 @@
                 </div>
             </div>
         </section>
-        <section class="row mb-3">
+        <section class="row">
             <div class="col text-center">
                 <div class="card">
                     <div class="card-body example-subtitle-cue">
@@ -32,15 +32,11 @@
                 </div>
             </div>
         </section>
-        <section id="alert" class="row d-none">
-            <div class="col text-center">
-                <div class="alert alert-warning" role="alert">
-                    Remember to refresh the browser tab (in which Viaplay is playing) in order for the changes to take effect!
-                </div>
-            </div>
-        </section>
         <section class="row">
-            <hr class="col">
+            <div class="col text-right">
+                <hr>
+                <small><em class="vs-version"></em><img class="mb-1 ml-2 vs-icon"></small>
+            </div>
         </section>
     </div>
     <script src="dest/js/vanilla-picker.min.js"></script>
