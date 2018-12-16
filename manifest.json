@@ -18,7 +18,7 @@
         "matches": ["https://*/*"],
         "include_globs": ["https://viaplay.*/*"],
         "css": ["dest/css/style.min.css"],
-        "js": ["dest/js/vanilla-picker.min.js", "dest/js/custom.min.js"],
+        "js": ["dest/js/vanilla-picker.min.js", "dest/js/content.min.js"],
         "run_at": "document_end"
     }],
     "permissions": [

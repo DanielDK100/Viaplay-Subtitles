@@ -1,9 +1,10 @@
 {
+    "main": "index.js",
     "name": "Viaplay-Subtitles",
     "license": "MIT",
     "scripts": {
         "css": "node-sass src/scss/style.scss dest/css/style.min.css --output-style compressed",
-        "js": "uglifyjs src/js/custom.js --compress --mangle --output dest/js/custom.min.js && uglifyjs src/js/background.js --compress --mangle --output dest/js/background.min.js",
+        "js": "uglifyjs src/js/content.js --compress --mangle --output dest/js/content.min.js && uglifyjs src/js/background.js --compress --mangle --output dest/js/background.min.js",
         "copy": "copyfiles -u 4 node_modules/bootstrap/dist/css/bootstrap.min.css dest/css && copyfiles -u 3 node_modules/vanilla-picker/dist/vanilla-picker.min.js dest/js",
         "watch:css": "yarn css -w"
     },
@@ -11,7 +12,7 @@
         "bootstrap": "^4.*.*",
         "copyfiles": "^2.*.*",
         "node-sass": "^4.*.*",
-        "uglify-js": "^3.*.*",
+        "uglify-es": "^3.*.*",
         "vanilla-picker": "^2.*.*"
     }
 }
