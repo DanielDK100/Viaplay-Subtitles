@@ -24,8 +24,8 @@ chrome.storage.sync.get(['vs_background', 'vs_text'], function(storageInitialize
                 this.setMovieQuote(this[_doc].querySelector('.example-subtitle-cue p'), this[_movieQuotes]);
                 this.setPopupColors(this[_vsStyle], this[_storage]);
 
-                this.initializeColorPicker(this[_doc].querySelector('#background'), this[_storage.vs_background], this[_vsBackground]);
-                this.initializeColorPicker(this[_doc].querySelector('#text'), this[_storage.vs_text], this[_vsText]);
+                this.initializeColorPicker(this[_doc].querySelector('#background'), this[_storage].vs_background, this[_vsBackground]);
+                this.initializeColorPicker(this[_doc].querySelector('#text'), this[_storage].vs_text, this[_vsText]);
             }
 
             static getInstance(instance) {
