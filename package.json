@@ -6,7 +6,7 @@
         "js": "uglifyjs src/js/content.js --compress --mangle --output dest/js/content.min.js && uglifyjs src/js/background.js --compress --mangle --output dest/js/background.min.js",
         "copy": "copyfiles -u 4 node_modules/bootstrap/dist/css/bootstrap.min.css dest/css && copyfiles -u 3 node_modules/vanilla-picker/dist/vanilla-picker.min.js dest/js",
         "build": "yarn copy && yarn js && yarn css",
-        "build:zip": "pack-zip",
+        "build:zip": "yarn build && pack-zip",
         "watch:css": "yarn css -w"
     },
     "dependencies": {
